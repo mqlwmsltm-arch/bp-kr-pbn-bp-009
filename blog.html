@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>블로그 | 구로 홈페이지 제작 전문 - 브랜드 스토리를 입히다</title>
+    <meta name="description" content="홈페이지는 단순한 코드가 아닙니다. 구로 지역에서 당신의 비즈니스가 가진 이야기를 가장 아름답게 전달하는 방법을 이야기합니다.">
+    <meta name="keywords" content="구로 홈페이지 제작, 구로 웹디자인, 브랜드 스토리텔링, 중소기업 브랜딩, 에디토리얼 웹디자인">
+    <link rel="canonical" href="https://kr-pbn-bp-009.pages.dev/blog/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kr-pbn-bp-009.pages.dev/blog/">
+    <meta property="og:title" content="블로그 | 구로 홈페이지 제작 전문">
+    <meta property="og:description" content="홈페이지는 단순한 코드가 아닙니다. 구로 지역에서 당신의 비즈니스가 가진 이야기를 가장 아름답게 전달하는 방법을 이야기합니다.">
+    
+    <style>
+        /* [Design System: kr-noir-gold] - Reused from previous page */
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #141414;
+            --color-text-main: #f0f0f0;
+            --color-text-muted: #888888;
+            --color-accent: #d4af37; /* Metallic Gold */
+            --font-serif: 'Noto Serif KR', serif;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            --spacing-unit: 1rem;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-main);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+        a:hover { color: var(--color-accent); }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 700; color: #ffffff; }
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+        h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin-bottom: 1rem; color: var(--color-accent); }
+        h3 { font-size: 1.5rem; margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.05rem; color: #cccccc; }
+        
+        .text-accent { color: var(--color-accent); }
+        .text-center { text-align: center; }
+        
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section { padding: 80px 0; }
+
+        /* Utilities */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            padding-right: 15px;
+            padding-top: 5px;
+            color: var(--color-accent);
+            font-family: var(--font-serif);
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 40px 0;
+            width: 100%;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-family: var(--font-serif); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.03em; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Mobile simplified for this context */
+        }
+
+        /* Components */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid var(--color-accent);
+            color: var(--color-accent);
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .btn:hover { background-color: var(--color-accent); color: #000; }
+
+        .meta-info {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .editorial-image {
+            width: 100%;
+            height: 400px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            margin: 30px 0;
+            font-family: var(--font-serif);
+            font-style: italic;
+            border-left: 2px solid var(--color-accent);
+        }
+
+        .contact-bar {
+            background-color: var(--color-bg-secondary);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .contact-bar h2 { font-size: 2rem; margin-bottom: 10px; color: #fff; }
+        .contact-bar a { font-size: 1.5rem; color: var(--color-accent); font-weight: 700; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="/" class="logo">Guro<span class="text-accent">Web</span>.</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/blog" class="text-accent">Blog</a>
+                <a href="tel:01062790862">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="meta-info">
+                    <span>2023. 10. 25</span> &bull; <span>Brand Strategy</span> &bull; <span>Editor 01</span>
+                </div>
+                
+                <h1>홈페이지, '만드는' 게 아니라 '키우는' 것</h1>
+                
+                <div class="editorial-content">
+                    <p class="drop-cap">
+                        구로디지털단지의 야경을 보며 커피 한 잔을 하다가 문득 든 생각이 있어요. 요즘 '홈페이지 제작'이라고検索하는 사장님들이 가장 많이 묻는 질문이 뭘까요? "얼마면 되나요?" 아니면 "며칠 걸리나요?"
+                    </p>
+                    <p>
+                        물론 중요한 질문입니다. 하지만 제가 현장에서 구로 지역의 소상공인 분들, 그리고 스타트업 대표님들을 만나보면 정작 가장 큰 고민은 이거더라고요.
+                    </p>
+                    <p>
+                        <strong>"내 사이트는 왜 그렇게 차가워 보일까?"</strong>
+                    </p>
+                    <p>
+                        기능은 다 들어갔는데, 왠지 모르게 사람이 사는 냄새가 안 난다고요. 네, 맞습니다. 코딩은 글을 쓰는 문법일 뿐, 진짜 중요한 건 그 안에 담길 '목소리'니까요.
+                    </p>
+
+                    <div class="editorial-image">
+                        [Image Placeholder: Minimalist workspace with a coffee cup and a laptop showing a wireframe]
+                    </div>
+
+                    <h2>1. 당신의 브랜드에도 '취향'이 있나요?</h2>
+                    <p>
+                        저는 디자인을 할 때, 사장님의 브랜드를 하나의 '인격체'로 상상합니다. 만약 당신의 가게가 사람이라면, 어떤 옷을 입을까요? 어떤 음악을 좋아할까요?
+                    </p>
+                    <p>
+                        단순히 "깔끔하게 해주세요"라고 말씀하시면, 저는 '여백의 미'가 있는 화이트 톤을 추천드리겠지만, 만약 당신의 브랜드가 '강렬한 에너지'를 가지고 있다면 과감한 블랙과 골드 (우리가 지금 쓰는 이 테마처럼요) 가 더 어울리겠죠.
+                    </p>
+                    <p>
+                        구로 홈페이지 제작을 할 때, 저는 템플릿을 복사해서 붙여넣지 않습니다. 당신의 사업 계획서를 펼쳐놓고, 거기서 가장 빛나는 문장 하나를 찾아내서 그것을 웹사이트의 메인 카피로 만듭니다. 그게 바로 에디토리얼 디자인의 시작입니다.
+                    </p>
+
+                    <h2>2. 사용자 경험 (UX) 은 친절함에서 옵니다</h2>
+                    <p>
+                        요즘 트렌드가 뭐니, 네모니 하는 말들 다 좋습니다. 하지만 결국 핵심은 '친절함'입니다.
+                    </p>
+                    <p>
+                        손님이 우리 가게에 들어왔을 때, 메뉴판이 너무 복잡해서 주문을 망설인다면 어떨까요? 웹사이트도 똑같습니다. 방문자가 '문의하기' 버튼을 찾기 위해 3 번 이상 클릭해야 한다면, 그건 디자인이 실패한 겁니다.
+                    </p>
+                    <p>
+                        저는 모바일 환경을 특히 중요하게 생각합니다. 구로 지역 이동 인구가 많잖아요? 지하철 길거리에서, 카페 테이블 위에서 손가락 하나만으로 당신의 서비스를 주문하고 결제할 수 있어야 합니다. 그게 진짜 '스마트'한 홈페이지죠.
+                    </p>
+
+                    <div class="divider"></div>
+
+                    <h3>마치며: 함께 이야기를 만들어가요</h3>
+                    <p>
+                        홈페이지는 완공되는 날이 끝이 아닙니다. 오히려 그날이 시작입니다. 새로운 메뉴가 생기고, 이벤트가 열리고, 당신의 브랜드가 성장함에 따라 웹사이트도 함께 자라나야 합니다.
+                    </p>
+                    <p>
+                        단순한 코딩 작업이 아니라, 당신의 비즈니스 스토리를 함께 써 내려갈 파트너를 찾고 계신다면 언제든 편하게 연락주세요. 구로에서, 당신만의 특별한 웹사이트를 기다리고 있겠습니다.
+                    </p>
+                    
+                    <a href="tel:01062790862" class="btn">무료 컨설팅 문의하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section (Reused Design) -->
+    <section class="contact-bar">
+        <div class="container">
+            <h2>구로 홈페이지 제작, <span class="text-accent">차별화된 시작</span></h2>
+            <p style="color: #888; margin-bottom: 20px;">단순 제작을 넘어, 브랜드의 가치를 높이는 파트너가 되겠습니다.</p>
+            <a href="tel:01062790862">010-6279-0862</a>
+        </div>
+    </section>
+
+    <!-- Footer (Simplified for Context) -->
+    <footer style="padding: 40px 0; text-align: center; font-size: 0.8rem; color: #444; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container">
+            <p>&copy; 2023 Guro Web Design Studio. All rights reserved.</p>
+            <p>서울특별시 구로구 디지털로 | 대표: 김개발</p>
+        </div>
+    </footer>
+
+</body>
+</html>
