@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의 · 구로 홈페이지 제작전문가의 시선</title>
+  <meta name="description" content="구로 홈페이지 제작전문가의 시선 운영 관련 문의를 받는 곳입니다.">
+  <link rel="canonical" href="https://guro-web-marketing.pbn-builder.xyz/contact.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --color-primary: #1a1a1a;
+ --color-secondary: #fafaf5;
+ --color-accent: #c5a880;
+ --color-text-muted: #666666;
+ --font-main: "Playfair Display", "Times New Roman", serif;
+ --font-body: "Georgia", "Times New Roman", serif;
+ --space-unit: 24px;
+ --container-width: 720px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--color-secondary);
+ color: var(--color-primary);
+ font-family: var(--font-body);
+ line-height: 1.8;
+ font-size: 18px;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+ font-family: var(--font-main);
+ font-weight: 400;
+ letter-spacing: -0.02em;
+ line-height: 1.2;
+ margin-bottom: 1.5rem;
+ }
+
+ h1 { font-size: 3.5rem; }
+ h2 { font-size: 2.5rem; margin-top: 3rem; }
+ h3 { font-size: 1.5rem; font-style: italic; }
+
+ p {
+ margin-bottom: 1.5rem;
+ color: #333;
+ }
+
+ a {
+ color: var(--color-primary);
+ text-decoration: none;
+ border-bottom: 1px solid var(--color-accent);
+ transition: color 0.3s ease;
+ }
+
+ a:hover {
+ color: var(--color-accent);
+ }
+
+ /* Layout & Spacing */
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--space-unit);
+ }
+
+ section {
+ padding: 120px 0;
+ border-bottom: 1px solid rgba(0,0,0,0.05);
+ }
+
+ /* Typography Utilities */
+ .drop-cap::first-letter {
+ float: left;
+ font-family: var(--font-main);
+ font-size: 4.5rem;
+ line-height: 0.8;
+ padding-right: 12px;
+ padding-top: 4px;
+ color: var(--color-accent);
+ }
+
+ .text-accent { color: var(--color-accent); }
+ .text-center { text-align: center; }
+
+ /* Header */
+ header {
+ padding: 40px 0;
+ position: relative;
+ }
+
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: var(--font-main);
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+ border: none;
+ }
+
+ .menu-toggle {
+ display: none;
+ background: none;
+ border: none;
+ cursor: pointer;
+ font-size: 1.5rem;
+ font-family: var(--font-main);
+ }
+
+ nav ul {
+ display: flex;
+ list-style: none;
+ gap: 32px;
+ }
+
+ nav a {
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ border: none;
+ }
+
+ /* Hero Section */
+ .hero {
+ position: relative;
+ height: 80vh;
+ min-height: 600px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+ color: var(--color-secondary);
+ overflow: hidden;
+ }
+
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0; bottom: 0;
+ background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.6) 100%);
+ z-index: 1;
+ }
+
+ .hero-content {
+ position: relative;
+ z-index: 2;
+ text-align: center;
+ max-width: 600px;
+ padding: 0 20px;
+ }
+
+ .hero h1 {
+ font-size: 4rem;
+ margin-bottom: 24px;
+ color: #fff;
+ }
+
+ .hero p {
+ font-size: 1.25rem;
+ color: rgba(255,255,255,0.8);
+ margin-bottom: 48px;
+ }
+
+ .btn-cta {
+ display: inline-block;
+ padding: 16px 32px;
+ background-color: var(--color-accent);
+ color: #fff;
+ font-family: var(--font-main);
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ border: none;
+ border-radius: 0;
+ transition: background 0.3s ease;
+ }
+
+ .btn-cta:hover {
+ background-color: #a88b66;
+ color: #fff;
+ }
+
+ /* Article/Content Style */
+ .editorial-block {
+ margin-bottom: 48px;
+ }
+
+ blockquote {
+ border-left: 2px solid var(--color-accent);
+ padding-left: 24px;
+ font-style: italic;
+ font-size: 1.2rem;
+ color: var(--color-text-muted);
+ margin: 32px 0;
+ }
+
+ /* Reviews */
+ .review-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 48px;
+ }
+
+ .review-card {
+ border-top: 1px solid var(--color-primary);
+ padding-top: 24px;
+ }
+
+ .review-meta {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 16px;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: var(--color-text-muted);
+ }
+
+ .stars { color: var(--color-accent); }
+
+ /* Footer */
+ footer {
+ background-color: var(--color-primary);
+ color: var(--color-secondary);
+ padding: 80px 0 40px;
+ text-align: center;
+ }
+
+ .footer-content {
+ margin-bottom: 40px;
+ }
+
+ .footer-content p {
+ color: rgba(255,255,255,0.6);
+ font-size: 0.9rem;
+ }
+
+ .copyright {
+ font-size: 0.75rem;
+ color: rgba(255,255,255,0.3);
+ border-top: 1px solid rgba(255,255,255,0.1);
+ padding-top: 24px;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.5rem; }
+ h2 { font-size: 2rem; }
+ 
+ .menu-toggle { display: block; }
+ 
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--color-secondary);
+ padding: 20px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ }
+
+ nav ul.active { display: flex; }
+
+ .hero { height: 60vh; min-height: 400px; }
+ .hero h1 { font-size: 2.5rem; }
+ 
+ section { padding: 80px 0; }
+ }
+ </style>
+  <meta property="og:url" content="https://guro-web-marketing.pbn-builder.xyz/contact.html">
+  <meta property="og:title" content="문의 · 구로 홈페이지 제작전문가의 시선">
+  <meta property="og:description" content="구로 홈페이지 제작전문가의 시선 운영 관련 문의를 받는 곳입니다.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-container">
+ <a href="/" class="logo">Noir Web Studio</a>
+ <button class="menu-toggle" aria-label="메뉴 열기">Menu</button>
+ <nav>
+ <ul>
+ <li><a href="#about">About</a></li>
+ <li><a href="#process">Process</a></li>
+ <li><a href="#reviews">Reviews</a></li>
+ 
+ </ul>
+ <a href="contact.html">Contact</a><a href="posts.html">글 목록</a></nav>
+ </div>
+ </header>
+    <main>
+      <h1>문의</h1>
+      <div class="content">
+        <p>글에서 다룬 내용에 대한 질문, 잘못된 정보 정정 요청, 제휴 문의는 아래 주소로 보내 주세요. 확인하는 대로 답장드립니다.</p>
+        <p><strong>이메일</strong> <a href="mailto:ghdtjrtka@gmail.com">ghdtjrtka@gmail.com</a></p>
+        <p>정정 요청은 해당 글의 주소를 함께 적어 주시면 더 빨리 처리됩니다. 광고·홍보 대행 제안은 받지 않습니다.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
